@@ -1,0 +1,9 @@
+1. Linkedin - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000015_1549330433_linkedin-logo.png
+
+2. Stackoverflow - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000022_1549822879_stackoverflow-logo.png
+
+3. Google Plus - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000023_1549823282_google-plus-logo.png
+
+4. Facebook - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000014_1549330414_facebook-logo.png
+
+5. Quora - https://ninjasfiles.s3.amazonaws.com/asset_0000000000000021_1549822861_quora-logo.png

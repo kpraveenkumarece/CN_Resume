@@ -82,6 +82,7 @@ section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 20px;
 }
 
 section:nth-child(2n) {
@@ -184,7 +185,6 @@ section:nth-child(2n + 1) {
 .timeline {
     position: relative;
     width: 75%;
-    border: 2px solid black;
 }
 
 .timeline-box {
@@ -194,7 +194,6 @@ section:nth-child(2n + 1) {
     position: relative;
     left: 5%;
     text-align: right;
-    border: 2px solid black;
 }
 
 .timeline-box::after {
@@ -220,13 +219,27 @@ section:nth-child(2n + 1) {
     left: -9%;
 }
 
+.timeline-container {
+    padding: 8px;
+}
+
+.timeline-logo {
+    position: absolute;
+    width: 50px;
+    overflow: hidden;
+}
+
+.timeline-logo > img {
+    width: 100%;
+}
+
 #timeline-divider {
     position: absolute;
     width: 0;
-    top: 8%;
+    top: 10%;
     left: 50%;
-    border: 2px dashed #0096fa6b;
-    height: 75%;
+    border: 1px dashed #0096fa6b;
+    height: 66%;
     color: #433E3F;
 }
 
@@ -243,6 +256,39 @@ section:nth-child(2n + 1) {
     color: #2857a4;
 }
 
+.experience-designation {
+    font-size: 1.4rem;
+}
+
+.experience-company-name {
+    margin: 5px 0 0;
+    color: #eb822d;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.experience-duration {
+    color: #9e9b9b;
+    font-weight: 100;
+    color: grey;
+    font-size: 1rem;
+}
+
+.experience-description {
+    font-size: 14px;
+    padding: 2px;
+    color: grey;
+    line-height: 20px;
+}
+
+.text-align-justify {
+    text-align: justify;
+}
+#cloudstrats-logo{
+    margin-top: -15px;
+    width: 80px;
+    border: none;
+}
 
 
 /* Portfolio Section */
@@ -259,7 +305,7 @@ section:nth-child(2n + 1) {
 .portfolio-image-container {
     max-width: 300px;
     overflow: hidden;
-    margin: 10px;
+    margin: 30px;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
@@ -409,6 +455,10 @@ button:focus {
 
 /* Common Margin Classes */
 
+.m0 {
+    margin: 0;
+}
+
 .mb75px {
     margin-bottom: 75px;
 }
@@ -430,6 +480,10 @@ button:focus {
 
 
 /* setting background-color */
+
+.m-blue {
+    color: #2857a4;
+}
 
 .mb-blue {
     background-color: #2857a4;

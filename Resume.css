@@ -616,6 +616,7 @@ button:focus {
     } 
     .timeline-logo {
         left: -2%;
+        top: -5%;
     }
 
     /*.experience-company-name {
@@ -634,6 +635,7 @@ button:focus {
     }
 
     .timeline-box::after {
+        
         left: -10% !important;
     }
 

@@ -1,24 +1,80 @@
 body {
     margin: 0px;
-    font: sans-serif;
+    font-family: sans-serif;
     font-size: 30px;
 }
-#header-background{
-background-image: url(Assets/Images/asset_0000000000000020_1549743985_macbook_mouse.jpg);
-height: 65vh;
-background-size: cover;
-background-position: center;
-background-attachment: fixed;
-opacity: 0.8;
-padding-top:1.2rem;
+
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+
+/* Body Header */
+
+#body-header {
+    height: 65vh;
+    opacity: 0.8;
+    background-image: url(Assets/Images/asset_0000000000000020_1549743985_macbook_mouse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 1.2rem;
 }
 
 
 
 /* Horizontal Lists */
 
-.horizontal-list {
+.bars{
+    color: white;
+    margin: 0;
+    margin-right: 5%;
+    display: none;
+}
+
+.bars i {
+    font-size: 2rem;
+}
+
+.dropdown-list{
+    margin: 0;
+    display: none;
+    background-color: #828470;
+    box-shadow: 0px 4px 8px 1px #535547;
+}
+
+.dropdown-list ul{
+    margin: 0.2rem 0.2rem;
+    text-align: left;
+    padding: 0px 0.8rem;
+}
+
+.dropdown-menu:hover .dropdown-list{
+    display: block;
+    position: absolute;
+    right: 3%;
+}
+
+.dropdown-list li{
+    margin: 0.4rem 0px;
+}
+
+.no-list-style{
     list-style: none;
+}
+
+.no-list-style li {
+    font-weight: 100;
+    font-size: 0.9rem;
+}
+
+.no-list-style li a{
+    list-style: none;
+    color: white;
+    text-decoration: none;
+}
+
+.horizontal-list {
     padding-left: 0px;
     margin: 0px;
 }
@@ -26,14 +82,8 @@ padding-top:1.2rem;
 .horizontal-list li {
     display: inline-block;
     margin: 0px 8px 8px 0px;
-    font-weight: 100;
-    font-size: 0.9rem;
 }
 
-.horizontal-list li a {
-    color: white;
-    text-decoration: none;
-}
 
 .nav-menu li a {
     transition: color 0.5s, border-bottom 4s;
@@ -43,11 +93,6 @@ padding-top:1.2rem;
     color: lightgrey;
     border-bottom: 1px solid black;
 }
-
-.text-center {
-    text-align: center;
-}
-
 
 
 /* Name and Social Icons*/
@@ -281,14 +326,9 @@ section:nth-child(2n + 1) {
     line-height: 20px;
 }
 
-.text-align-justify {
-    text-align: justify;
-}
-#cloudstrats-logo{
-    margin-top: -15px;
-    width: 80px;
-    border: none;
-}
+
+
+
 
 
 /* Portfolio Section */
@@ -451,7 +491,19 @@ button:focus {
     outline: none;
 }
 
+/* Common Text Align Classes */
 
+.text-right{
+    text-align: right;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-justify {
+    text-align: justify;
+}
 
 /* Common Margin Classes */
 
@@ -478,7 +530,6 @@ button:focus {
 }
 
 
-
 /* setting background-color */
 
 .m-blue {
@@ -500,7 +551,6 @@ button:focus {
 .mb-light-purple {
     background-color: #93738c;
 }
-
 
 
 
@@ -548,3 +598,67 @@ button:focus {
     height: inherit;
     width: 30%;
 }
+
+@media only screen and (max-width: 572px) {
+    
+    .timeline-box {
+        width: 100%;
+        left: 10% !important;
+    }
+
+    .bars {
+        display: block;
+    }
+    
+    
+    .nav-menu {
+        display: none;
+    } 
+    .timeline-logo {
+        left: -2%;
+    }
+
+    /*.experience-company-name {
+    word-break: break-word;
+}*/
+}
+
+
+
+@media only screen and (max-width: 768px) {
+
+
+    .timeline-box {
+        width: 90%;
+        left: 10% !important;
+    }
+
+    .timeline-box::after {
+        left: -10% !important;
+    }
+
+    #timeline-divider {
+        top: 10%;
+        left: 2%;
+    }
+
+    #contact-form {
+        margin-left: 0%;
+    }
+
+    #contact-container {
+        flex-wrap: wrap;
+    }
+
+    #my-details-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+    #contact-form-container {
+        width: 80%;
+        margin: 10%;
+    }
+
+}
+
